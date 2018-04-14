@@ -1,30 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
+    <Filter Include="Files">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    <Filter Include="Files\Utils">
+      <UniqueIdentifier>{38da1789-506a-4302-accc-c0681ee5b8c3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Files\Utils\Math">
+      <UniqueIdentifier>{04314900-3db7-43a7-858b-ec8acf45fcd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Utils\ResourceHolder">
+      <UniqueIdentifier>{86f98cd5-b20c-468a-b984-65b343a8c691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Utils\DebugLogger">
+      <UniqueIdentifier>{62c5362b-c5df-4e28-a606-e698a9e5dd1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Audio">
+      <UniqueIdentifier>{52066f5d-1adb-49eb-9954-0bec858dc23f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Audio\AudioProperties">
+      <UniqueIdentifier>{d7240952-fa31-4f6f-867a-6f911edcf1e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Audio\AudioPlayer">
+      <UniqueIdentifier>{16b8d5d4-9622-4c97-9c85-7c4245a372bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Audio\AudioPlayer\SoundPlayer">
+      <UniqueIdentifier>{6b4fe313-e342-4b7e-b82b-3737f6a1bb37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Audio\AudioPlayer\MusicPlayer">
+      <UniqueIdentifier>{71cabb01-d252-45c7-bfe4-7bbe79f790da}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\Utils\Math.h">
+      <Filter>Files\Utils\Math</Filter>
     </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\Utils\ResourceHolder.h">
+      <Filter>Files\Utils\ResourceHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils\DebugLogger.h">
+      <Filter>Files\Utils\DebugLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Audio\AudioProperties.h">
+      <Filter>Files\Audio\AudioProperties</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Audio\AudioPlayer.h">
+      <Filter>Files\Audio\AudioPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Audio\SoundPlayer.h">
+      <Filter>Files\Audio\AudioPlayer\SoundPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Audio\MusicPlayer.h">
+      <Filter>Files\Audio\AudioPlayer\MusicPlayer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Utils\Math.cpp">
+      <Filter>Files\Utils\Math</Filter>
     </ClCompile>
+    <ClCompile Include="src\Utils\DebugLogger.cpp">
+      <Filter>Files\Utils\DebugLogger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Audio\AudioProperties.cpp">
+      <Filter>Files\Audio\AudioProperties</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\Utils\ResourceHolder.inl">
+      <Filter>Files\Utils\ResourceHolder</Filter>
+    </None>
+    <None Include="include\Audio\AudioPlayer.inl">
+      <Filter>Files\Audio\AudioPlayer</Filter>
+    </None>
+    <None Include="include\Audio\SoundPlayer.inl">
+      <Filter>Files\Audio\AudioPlayer\SoundPlayer</Filter>
+    </None>
+    <None Include="include\Audio\MusicPlayer.inl">
+      <Filter>Files\Audio\AudioPlayer\MusicPlayer</Filter>
+    </None>
   </ItemGroup>
 </Project>

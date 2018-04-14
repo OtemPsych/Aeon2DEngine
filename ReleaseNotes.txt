@@ -1,0 +1,9 @@
+v0.1.0 | 08/03/2018 - 14/04/2018
+  Features
+    * Added a MusicPlayer class that inherits AudioPlayer and facilitates loading in music tracks, playing and managing them
+    * Added a SoundPlayer class that inherits AudioPlayer and facilitates loading in sound effects, playing and managing them
+    * Added an AudioPlayer abstract base class that provides a global volume and listener repositioning
+    * Added an AudioProperties class that acts as a container for a specific audio's properties
+    * Added a ResourceHolder class that stores SFML resources of a certain type (sf::Texture, sf::Font, etc.)
+    * Added a DebugLogger static class that logs engine-related and application-related debug info
+    * Added a Math static class providing various math-related utility functions
